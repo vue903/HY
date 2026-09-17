@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="hyFrame" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#67e8f9" />
+      <stop offset="45%" stop-color="#22d3ee" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+    <linearGradient id="hyPanel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1b2130" />
+      <stop offset="48%" stop-color="#0c1120" />
+      <stop offset="100%" stop-color="#05070d" />
+    </linearGradient>
+    <linearGradient id="hyFace" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a5f3fc" />
+      <stop offset="40%" stop-color="#22d3ee" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+    <radialGradient id="hyCore" cx="50%" cy="38%" r="62%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0" />
+    </radialGradient>
+    <clipPath id="hyClip">
+      <path d="M32 3 L56 17 V47 L32 61 L8 47 V17 Z" />
+    </clipPath>
+  </defs>
+
+  <path d="M32 3 L56 17 V47 L32 61 L8 47 V17 Z" fill="url(#hyPanel)" />
+
+  <g clip-path="url(#hyClip)">
+    <rect x="0" y="0" width="64" height="64" fill="url(#hyCore)" />
+  </g>
+
+  <path
+    d="M32 3 L56 17 V47 L32 61 L8 47 V17 Z"
+    fill="none"
+    stroke="url(#hyFrame)"
+    stroke-width="3"
+    stroke-linejoin="round"
+  />
+
+  <circle cx="56" cy="17" r="2.4" fill="#67e8f9" />
+  <circle cx="8" cy="47" r="2.4" fill="#c084fc" />
+
+  <text
+    x="32"
+    y="41"
+    fill="url(#hyFace)"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="26"
+    font-weight="800"
+    text-anchor="middle"
+  >HY</text>
+</svg>
